@@ -10,7 +10,7 @@ class Autosearch(object):
     # @retry(tries=10, delay=1,jitter=1)
     def __init__(self):
         self.driver = webdriver.Chrome()
-
+    
     def my_input(self):
         # self.name:
         self.name = input("Name of item: ")
@@ -23,20 +23,21 @@ class Autosearch(object):
             self.url = 'https://www.amazon.com'
 
     def buy(self):
-
-
+        self.driver.find_element_by_xpath('//*[@id="J_juValid"]/div[1]/a').click()
+        pag.scroll(-900)
+        self.driver.find_element_by_class_name('go-btn').click()
+    
     def login(self):
         self.driver.get(self.url)
         self.driver.maximize_window()
-
-
+    
     def search(self):
-        self.driver.fin
+        search_name = self.name.replace(" ", "+")
+        self.driver.get(self.url +"/s?k="+ search_name +"&ref=nb_sb_noss_1")
 
-    def monitor(self):
-
-
-my_search = Autosearch()
-my_search.my_input()
-my_search.login()
+    def test(self):
+        self.my_input()
+        self.search()
+        return Ture;
+        #self.driver.close()
 
