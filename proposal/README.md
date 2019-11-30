@@ -12,7 +12,7 @@ With the development of the times, more and more people start shopping online. I
 
 **Prepare**   
 
-need to install selenium, retry, pyautogui,chromedriver
+need to install selenium, retry, chromedriver
 
 ChromeDriver(for mac):  
 mv chromedriver /usr/local/bin  
