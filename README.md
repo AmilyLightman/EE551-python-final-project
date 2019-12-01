@@ -21,39 +21,27 @@ sudo chmod u+x,o+x   /usr/local/bin/chromedriver
 **Design**  
 
 In order to automatically buy items on Taobao website, we need:
-
 1. open the Taobao webpage
-
 2. jump to its shopping cart 
-
 3. submit the order
-
 4. place the order
 
 **Implement**
 
 This is 7 functions in this project:
 
-__init__ -- create a webdriver of Chrome using webdriver in selenium
-
-input -- input information for the search item's name, the url of website(working for Taobao only now) and the time we want it to automatically buy
-
-buy -- using for submit the order and place the order
-
-login -- automatically open the login page for log in the accont
-
-search -- search the name we inputed in input function(this is for future development)
-
-monitor -- monitor the time for buy inputed in input function, only goes to buy function is the real time on the computer is equal or later than the time inputed. If the real time is early than the time we set, it will retry every 0.1 second, 30 minutes for total.
-
-run -- this is the function how we run the taobao project
-
+1.__init__ -- create a webdriver of Chrome using webdriver in selenium
+2.input -- input information for the search item's name, the url of website(working for Taobao only now) and the time we want it to automatically buy
+3.buy -- using for submit the order and place the order
+4.login -- automatically open the login page for log in the accont
+5.search -- search the name we inputed in input function(this is for future development)
+6.monitor -- monitor the time for buy inputed in input function, only goes to buy function is the real time on the computer is equal or later than the time inputed. If the real time is early than the time we set, it will retry every 0.1 second, 30 minutes for total.
+7.run -- this is the function how we run the taobao project
 
 **Conclusion**
 
 This project can automatically buy items in the shopping cart on Taobao website, And can search in Taobao website by name.
 There is a video in folder video named taobao.mp4, recorded how a submitted one order in Taobao. if this is a discount start from 2019-11-30 12:00:00, we can run this project few minutes before 12 and set time for "2019-11-30 12:00:00". It will retry until the real time on the computer is 12, and it will automatically submit and place the order for us.
-
 
 **Future development**
 
