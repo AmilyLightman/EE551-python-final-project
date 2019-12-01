@@ -8,6 +8,9 @@ class AutoBuy(object):
 
     def __init__(self):
         self.driver = webdriver.Chrome()
+        self.name = "CARIEDO"
+        self.url = 'https://s.taobao.com'
+        self.buytime = "2019-11-30 11:00:00"
 
     def my_input(self):
         # self.name:
@@ -38,6 +41,7 @@ class AutoBuy(object):
                 time.sleep(3)
         except:
             time.sleep(3)
+
 
     def login(self):
         self.driver.get(self.url)
@@ -73,7 +77,6 @@ class AutoBuy(object):
 
     def run(self):
         try:
-            self.my_input()
             self.login()
             self.search()
             self.monitor()
