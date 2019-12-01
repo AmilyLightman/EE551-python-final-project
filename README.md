@@ -1,6 +1,6 @@
 EE551-python-final-project
 =====
-Automatic shopping
+**Automatic shopping**
 _____
 10440141 
 Wanying Cao 
@@ -12,7 +12,8 @@ With the development of the times, more and more people start shopping online. I
 
 **Prepare**   
 
-need to install selenium, chromedriver, python version 3.0+
+using python version 3.0+
+need to install selenium, chromedriver
 
 ChromeDriver(for mac):  
 mv chromedriver /usr/local/bin  
