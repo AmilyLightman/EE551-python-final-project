@@ -26,6 +26,7 @@ In order to automatically buy items on Taobao website, we need:
 2. jump to its shopping cart  
 3. submit the order   
 4. place the order    
+![](https://github.com/AmilyLightman/EE551-python-final-project/raw/master/process.png "Process")
 
 **Implement**
 
